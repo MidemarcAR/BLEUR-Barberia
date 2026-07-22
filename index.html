@@ -590,6 +590,13 @@
     font-size:.92rem;
     line-height:1.6;
   }
+  .map-embed{
+    margin-top:1.8rem;
+    border:1px solid var(--line);
+    overflow:hidden;
+    filter:saturate(.85) contrast(1.05);
+  }
+  .map-embed iframe{display:block;}
 
   .field{display:flex; flex-direction:column; gap:.6rem;}
   .field label{
@@ -1041,7 +1048,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <div>
               <h4>Dirección</h4>
-              <p>[ Dirección del local — se completará ]</p>
+              <p>Av. Manuel Belgrano 3821, B1872FWE Sarandí, Provincia de Buenos Aires, Argentina</p>
             </div>
           </div>
           <div class="item">
@@ -1071,6 +1078,13 @@
               <h4>Email</h4>
               <p>[ reservas@bleur.com ]</p>
             </div>
+          </div>
+
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps?q=Av.+Manuel+Belgrano+3821,+B1872FWE+Sarand%C3%AD,+Provincia+de+Buenos+Aires,+Argentina&output=embed"
+              width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Ubicación de BLEUR en el mapa"></iframe>
           </div>
         </div>
 
